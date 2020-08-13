@@ -5,6 +5,7 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
   new_array = []
   count = 0
   
+<<<<<<< HEAD
   while count < array_of_daily_temperatures.length do
     element_index = 0
     min = 100
@@ -19,3 +20,18 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
 end
 new_array
 end
+=======
+  while count < src.length do
+    element_index = 0
+    while element_index < new_array[count].count do
+      min = src.min
+      src.select { |i| i == min }
+      new_array << min
+      element_index += 1
+    end
+    count += 1
+  end
+  new_array
+end
+  
+>>>>>>> 07d268f0df9527b82b1563e1c039311800e82de6
